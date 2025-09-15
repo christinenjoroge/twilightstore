@@ -24,3 +24,6 @@ wp-content/themes/*
 
 # Optional: Ignore plugins
 wp-content/plugins/
+#git Ignore
+license.txt
+readme.html
