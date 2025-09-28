@@ -3,27 +3,27 @@
 .cache/
 *.map
 
-# WordPress upload cache or cache files (rare in themes)
-wp-content/cache/
+# # WordPress upload cache or cache files (rare in themes)
+# wp-content/cache/
 
-# Ignore everything
-/*
+# # Ignore everything
+# /*
 
-# But keep wp-content folder
-!wp-content/
+# # But keep wp-content folder
+# !wp-content/
 
-# Ignore everything in wp-content
-wp-content/*
+# # Ignore everything in wp-content
+# wp-content/*
 
-# But keep only your theme
-!wp-content/themes/
-wp-content/themes/*
+# # But keep only your theme
+# !wp-content/themes/
+# wp-content/themes/*
 
-# Only include your theme folder
-!wp-content/themes/your-theme-name/
+# # Only include your theme folder
+# !wp-content/themes/your-theme-name/
 
-# Optional: Ignore plugins
-wp-content/plugins/
+# # Optional: Ignore plugins
+# wp-content/plugins/
 #git Ignore
 license.txt
 readme.html

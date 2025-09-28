@@ -1,0 +1,32 @@
+<?php
+
+
+namespace TWILIGHT_THEME\Inc\Traits;
+
+trait singleton{
+    public function __construct(){
+
+    }
+
+
+     public function __clone(){
+        
+    }
+
+
+    final public static function get_intance(){
+        static $instance = [];
+
+        $called_class = get_called_class();
+
+        if (! isset ($instance[$called_class])){
+            $instance[ $called_class ] = new $called_class();
+
+            do_action(sprintf('twilight_theme_sinleton_init%s', $called_class));
+        }
+
+        return $instance[$called_class];
+    }
+}
+
+?>
