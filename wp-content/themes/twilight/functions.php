@@ -13,7 +13,7 @@ function twilight_enque_scripts (){
 
     // register script 
     wp_register_script('main-script',get_template_directory_uri().'/assets/main.js', [], filemtime(get_template_directory().'/assets/main.js'),true );
-    wp_register_script('bootstrap-js',get_template_directory_uri().'/assets/src/library/js/bootstrap.min.js', [],false,true );
+    wp_register_script('bootstrap-js',get_template_directory_uri().'/assets/src/library/js/bootstrap.bundle.min.js', [],false,true );
 
     // enqueue style
     wp_enqueue_style('stylesheet');
