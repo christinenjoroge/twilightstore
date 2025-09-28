@@ -6,6 +6,14 @@
  * @package Twilight
  */
 
+if ( ! defined( 'TWILIGHT_DIR_PATH' ) ) {
+	define( 'TWILIGHT_DIR_PATH', untrailingslashit( get_template_directory() ) );
+}
+
+
+
+require_once TWILIGHT_DIR_PATH . '/inc/helpers/autoloaders.php';
+
 function twilight_enque_scripts (){
     // register style
     wp_register_style('stylesheet',get_stylesheet_uri(), [], filemtime(get_template_directory().'/style.css'),'all');

@@ -84,4 +84,4 @@ function autoloader( $resource = '' ) {
 
 }
 
-spl_autoload_register( '\AQUILA_THEME\Inc\Helpers\autoloader' );
+spl_autoload_register( '\TWILIGHT_THEME\Inc\Helpers\autoloader' );
